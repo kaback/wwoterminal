@@ -10,7 +10,7 @@ my $three_days = $1;
 $content =~ /.*?Latest Weather Observations(.*?)Humidity.*/s;
 my $wind = $1;
 $wind =~ /.*>(\d+ mph from the .*?)<.*/s;
-print $1, "\n";
+print "Wind akt.: ",$1, "\n";
 
 $three_days =~ /(.*?)Charts(.*?)Charts(.*?)Charts/s;
 
